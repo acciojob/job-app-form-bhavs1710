@@ -9,24 +9,47 @@
 <body>
 	<!-- the entire body must be written by student -->
 	<div>
-		<forms>
-			Name:<input type="text" required><br>
-			Email:<input type="email" required><br>
-			Gender:<br>
-			<input type="radio" name="gender">Female<br>
-			<input type="radio" name="gender">Male<br>
-			<input type="radio" name="gender">Other<br>
-			Laptop:<br>
-			<input type="checkbox">Apple<br>
-			<input type="checkbox">Asus<br>
-			<input type="checkbox">HP<br>
-			Age:<input type="text" required><br>
-			Birthday:<input type="date" required><br>
-			Password:<input type="password" required><br>
-			Portfolio:<input type="url"><br>
-			<input type="submit">
+		<h2>JOB APP FORM</h2>
+		<form method="post">
+			<label for="name">Name*</label>
+			<input type="text" id="name" required><br>
+
+			<label for="email">Email*</label>
+			<input type="email"  id="name" required><br>
 			
-		</forms>
+            <label for="gender">Gender*</label>
+			<label for="female">Female</label>
+			<input type="radio" name="gender" id="female" value="female"><br>
+
+			<label for="male">Male</label>
+			<input type="radio" name="gender" id="male" value="male"><br>
+			
+			<label for="other">Other</label>
+			<input type="radio" name="gender" id="other" value="other"><br>
+
+			<label for="laptop">Laptop Brands</label>
+			<select id="laptop" name="laptop">
+				<option value="apple">Apple</option>
+				<option value="asus">Asus</option>
+				<option value="hp">HP</option>
+			</select>
+
+			<label for="age">AGE*</label>
+			<input type="text"  id="age" value="age" required><br>
+
+			<label for="dob">DOB*</label>
+			<input type="date" id="dob" value="dob" required><br>
+
+			<label for="password">Password*</label>
+			<input type="password" id="password" value="password" required><br>
+			
+			<label for="portfolio">PORTFOLIO</label>
+			<input type="url" id="portfolio" value="portfolio"><br>
+			
+			<label for="submit">SUBMIT</label>
+			<input type="submit">
+
+		</form>
 	</div>
 
 </body>
